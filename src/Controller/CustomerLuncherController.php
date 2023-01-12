@@ -8,9 +8,9 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class CustomerLuncherController extends AbstractController
 {
-    #[Route('/customer', name: 'app_customer_luncher')]
+    #[Route('/', name: 'app_customer_luncher')]
     public function index(): Response
     {
-        return $this->render('customer_luncher/index.html.twig');
+        return $this->render('customer_launcher/index.html.twig');
     }
 }
