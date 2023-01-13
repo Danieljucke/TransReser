@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>TransRev</title>
+    <title>16Diak.Business</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -39,17 +39,17 @@
         <a href="index.html" class="logo d-flex align-items-center">
             <!-- Uncomment the line below if you also wish to use an image logo -->
             <!-- <img src="assets/img/logo.png" alt=""> -->
-            <h1>TransReserv</h1>
+            <h1>16Diak.Business</h1>
         </a>
 
         <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
         <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
         <nav id="navbar" class="navbar">
             <ul>
-                <li><a href="index.html" class="active">Accueil</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="{{ path('app_customer_luncher') }}" class="active">Accueil</a></li>
+                <li><a href="{{ path('app_customer_luncher_about') }}">About</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="pricing.html">reservation</a></li>
+                <li><a href="{{ path('app_reservation') }}">reservation</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a class="get-a-quote" href="{{ path('app_login') }}">Sign In</a></li>
             </ul>
@@ -106,7 +106,7 @@
             </div>
 
             <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-                <img src="{{ asset('assets/img/1taxi-booking-isometric-web-banner-vector') }}" class="img-fluid mb-3 mb-lg-0" alt="">
+                <img src="{{ asset('assets/img/car rent.png') }}" class="img-fluid mb-3 mb-lg-0" alt="">
             </div>
 
         </div>
@@ -378,7 +378,7 @@
         <div class="row gy-4">
             <div class="col-lg-5 col-md-12 footer-info">
                 <a href="index.html" class="logo d-flex align-items-center">
-                    <span>TransReserv</span>
+                    <span>16Diak.Business</span>
                 </a>
                 <p>Le meilleur site de réservation de transport.
                     <br>

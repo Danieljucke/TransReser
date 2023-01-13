@@ -13,4 +13,9 @@ class CustomerLuncherController extends AbstractController
     {
         return $this->render('customer_launcher/index.html.twig');
     }
+    #[Route('/about', name: 'app_customer_luncher_about')]
+    public function about(): Response
+    {
+        return $this->render('customer_launcher/About.html.twig');
+    }
 }
