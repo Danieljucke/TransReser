@@ -16,6 +16,14 @@
     <!-- icons -->
     <link href=" {{asset('assets/plugins/simple-line-icons/simple-line-icons.min.css')}}" rel="stylesheet" type="text/css" />
     <link href=" {{asset('assets/plugins/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('assets/img/favicon.png') }}" rel="icon">
+    <link href="{{ asset('assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
     <!--bootstrap -->
     <link href="{{asset('assets/plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/plugins/summernote/summernote.css')}}" rel="stylesheet">
@@ -202,19 +210,6 @@
                                         </a>
                                     </li>
 {#                                {%endif%}#}
-                                <li class="nav-item">
-                                    <a href="{#{{path()}}#}" class="nav-link ">
-                                        <i class="material-icons">my_location</i>
-                                        <span class="title">Province</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="{#{{path()}}#}" class="nav-link ">
-                                        <i class="fa fa-globe"></i>
-                                        <span
-                                                class="title">Region</span>
-                                    </a>
-                                </li>
 {#                                {% if is_granted('ROLE_ADMIN') %}#}
                                     <li class="nav-item">
                                         <a href="{#{{path()}}#}" class="nav-link ">
@@ -222,13 +217,7 @@
                                             <span class="title">Role</span>
                                         </a>
                                     </li>
-{#                                {%endif%}#}
-                                <li class="nav-item">
-                                    <a href="{#{{path()}}#}" class="nav-link ">
-                                        <i class="material-icons">location_city</i>
-                                        <span class="title">Ville</span>
-                                    </a>
-                                </li>
+                                {#  {%endif%}#}
                                 <li class="nav-item">
                                     <a href="{#{{path()}}#}" class="nav-link ">
                                         <i class="material-icons">grain</i>
@@ -243,13 +232,13 @@
                             </a>
                             <ul class="sub-menu">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link nav-toggle"> <i class="fa fa-hotel"></i>
-                                        <span class="title">Hotel</span> <span class="arrow"></span>
+                                    <a href="#" class="nav-link nav-toggle"><i class="fa-solid fa-bus"></i>
+                                        <span class="title">Bus</span> <span class="arrow"></span>
                                     </a>
                                     <ul class="sub-menu">
                                         <li class="nav-item">
                                             <a href="{#{{path()}}#}" class="nav-link ">
-                                                <i class="fa fa-object-group"></i>
+                                                <i class="fa-solid fa-eye"></i>
                                                 <span class="title">Voir</span>
                                             </a>
                                         </li>
@@ -262,39 +251,33 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link nav-toggle"> <i class="fa fa-cutlery"></i>
-                                        <span class="title">Restaurant</span> <span class="arrow"></span>
+                                    <a href="#" class="nav-link nav-toggle"><i class="fa-solid fa-car"></i>
+                                        <span class="title">Cars</span> <span class="arrow"></span>
                                     </a>
                                     <ul class="sub-menu">
                                         <li class="nav-item">
                                             <a href="{#{{path('')}}#}" class="nav-link ">
-                                                <i class="material-icons">add</i>
-                                                <span class="title">Restaurant</span>
+                                                <i class="fa-solid fa-eye"></i>
+                                                <span class="title">voir</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="{#{{path('')}}#}" class="nav-link ">
                                                 <i class="material-icons">menu_book</i>
-                                                <span class="title">Ménus</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="{#{{path('')}}#}" class="nav-link ">
-                                                <i class="material-icons">restaurant_menu</i>
-                                                <span class="title">Plats</span>
+                                                <span class="title">catégories</span>
                                             </a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link nav-toggle"> <i class="material-icons">event_seat</i>
-                                        <span class="title">Salles</span> <span class="arrow"></span>
+                                        <span class="title">Vans</span> <span class="arrow"></span>
                                     </a>
                                     <ul class="sub-menu">
                                         <li class="nav-item">
                                             <a href="{#{{path()}}#}" class="nav-link ">
-                                                <i class="material-icons">add</i>
-                                                <span class="title">Ajout De Salle</span>
+                                                <i class="fa-solid fa-eye"></i>
+                                                <span class="title">voir</span>
                                             </a>
                                             <a href="{#{{path()}}#}" class="nav-link ">
                                                 <i class="fa fa-object-group"></i>
@@ -311,7 +294,7 @@
                             </a>
                             <ul class="sub-menu">
                                 <li class="nav-item">
-                                    <a href="{#{{path()}}#}" class="nav-link nav-toggle"> <i class="material-icons">history</i>
+                                    <a href="{#{{path()}}#}" class="nav-link nav-toggle"> <i class="fa-solid fa-eye"></i>
                                         <span class="title">Afficher Réservations</span>
                                     </a>
                                 </li>
@@ -323,7 +306,7 @@
                             </a>
                             <ul class="sub-menu">
                                 <li class="nav-item">
-                                    <a href="{#{{path()}}#}" class="nav-link nav-toggle"> <i class="material-icons">shopping_basket</i>
+                                    <a href="{#{{path()}}#}" class="nav-link nav-toggle"> <i class="fa-solid fa-eye"></i>
                                         <span class="title">Voir Paiements</span>
                                     </a>
                                 </li>
