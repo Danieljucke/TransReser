@@ -46,11 +46,11 @@
         <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
         <nav id="navbar" class="navbar">
             <ul>
-                <li><a href="index.html" class="active">Accueil</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="pricing.html">reservation</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="{{ path('app_customer_luncher') }}" class="active">Accueil</a></li>
+                <li><a href="{{ path('app_customer_luncher_about') }}">About</a></li>
+                <li><a href="{{ path('app_customer_luncher_service') }}">Services</a></li>
+                <li><a href="{{ path('app_reservation') }}">reservation</a></li>
+                <li><a href="{{ path('app_customer_luncher_contact') }}">Contact</a></li>
                 <li><a class="get-a-quote" href="{{ path('app_login') }}">Sign In</a></li>
             </ul>
         </nav><!-- .navbar -->

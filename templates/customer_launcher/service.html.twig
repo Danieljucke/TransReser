@@ -39,7 +39,7 @@
         <a href="index.html" class="logo d-flex align-items-center">
             <!-- Uncomment the line below if you also wish to use an image logo -->
             <!-- <img src="assets/img/logo.png" alt=""> -->
-            <h1>16Diak.Business</h1>
+            <h1>16Diak.Business </h1>
         </a>
 
         <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -59,63 +59,30 @@
 </header><!-- End Header -->
 <!-- End Header -->
 
-<!-- ======= Hero Section ======= -->
-<section id="hero" class="hero d-flex align-items-center">
-    <div class="container">
-        <div class="row gy-4 d-flex justify-content-between">
-            <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                <h2 data-aos="fade-up">Votre site de reservation de transport</h2>
-                <p data-aos="fade-up" data-aos-delay="100">Nous mettons à votre disposition des voitures, bus, mini van avec un confort de qualité</p>
-
-                <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
-                    <input type="text" class="form-control" placeholder="Marque ou Type voiture">
-                    <button type="submit" class="btn btn-primary">Search</button>
-                </form>
-
-                <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
-
-                    <div class="col-lg-3 col-6">
-                        <div class="stats-item text-center w-100 h-100">
-                            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-                            <p>Clients</p>
-                        </div>
-                    </div><!-- End Stats Item -->
-
-                    <div class="col-lg-3 col-6">
-                        <div class="stats-item text-center w-100 h-100">
-                            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-                            <p>Projects</p>
-                        </div>
-                    </div><!-- End Stats Item -->
-
-                    <div class="col-lg-3 col-6">
-                        <div class="stats-item text-center w-100 h-100">
-                            <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-                            <p>Support</p>
-                        </div>
-                    </div><!-- End Stats Item -->
-
-                    <div class="col-lg-3 col-6">
-                        <div class="stats-item text-center w-100 h-100">
-                            <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-                            <p>Workers</p>
-                        </div>
-                    </div><!-- End Stats Item -->
-
-                </div>
-            </div>
-
-            <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-                <img src="{{ asset('assets/img/car rent.png') }}" class="img-fluid mb-3 mb-lg-0" alt="">
-            </div>
-
-        </div>
-    </div>
-</section><!-- End Hero Section -->
-
 <main id="main">
 
-    <!-- ======= Featured Services Section ======= -->
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+        <div class="page-header d-flex align-items-center" style="background-image: url('{{ asset('assets/img/page-header.jpg') }}');">
+            <div class="container position-relative">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <h2>Nos Services</h2>
+                        <p>Nous sommes .....................................................................</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <ol>
+                    <li><a href="{{ path('app_customer_luncher') }}">Home</a></li>
+                    <li>Services</li>
+                </ol>
+            </div>
+        </nav>
+    </div><!-- End Breadcrumbs -->
+
     <section id="featured-services" class="featured-services">
         <div class="container">
             <div class="section-header">
@@ -157,56 +124,13 @@
         </div>
     </section><!-- End Featured Services Section -->
 
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about pt-0">
-        <div class="container" data-aos="fade-up">
-
-            <div class="row gy-4">
-                <div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
-                    <img src="assets/img/about.jpg" class="img-fluid" alt="">
-                    <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
-                </div>
-                <div class="col-lg-6 content order-last  order-lg-first">
-                    <h3>About Us</h3>
-                    <p>
-                        Dolor iure expedita id fuga asperiores qui sunt consequatur minima. Quidem voluptas deleniti. Sit quia molestiae quia quas qui magnam itaque veritatis dolores. Corrupti totam ut eius incidunt reiciendis veritatis asperiores placeat.
-                    </p>
-                    <ul>
-                        <li data-aos="fade-up" data-aos-delay="100">
-                            <i class="fa-solid fa-gauge"></i>
-                            <div>
-                                <h5>Ullamco laboris nisi ut aliquip consequat</h5>
-                                <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
-                            </div>
-                        </li>
-                        <li data-aos="fade-up" data-aos-delay="200">
-                            <i class="bi bi-fullscreen-exit"></i>
-                            <div>
-                                <h5>Magnam soluta odio exercitationem reprehenderi</h5>
-                                <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
-                            </div>
-                        </li>
-                        <li data-aos="fade-up" data-aos-delay="300">
-                            <i class="bi bi-broadcast"></i>
-                            <div>
-                                <h5>Voluptatem et qui exercitationem</h5>
-                                <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </section><!-- End About Us Section -->
-
     <!-- ======= Services Section ======= -->
     <section id="service" class="services pt-0">
         <div class="container" data-aos="fade-up">
 
             <div class="section-header">
-                <span>Nos Services</span>
-                <h2>Nos Services</h2>
+                <span>Our Services</span>
+                <h2>Our Services</h2>
 
             </div>
 
@@ -276,21 +200,6 @@
 
         </div>
     </section><!-- End Services Section -->
-
-    <!-- ======= Call To Action Section ======= -->
-    <section id="call-to-action" class="call-to-action">
-        <div class="container" data-aos="zoom-out">
-
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h3>Call To Action</h3>
-                    <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <a class="cta-btn" href="#">Call To Action</a>
-                </div>
-            </div>
-
-        </div>
-    </section><!-- End Call To Action Section -->
 
     <!-- ======= Features Section ======= -->
     <section id="features" class="features">
@@ -369,7 +278,7 @@
         </div>
     </section><!-- End Features Section -->
 
-</main><!-- End #main -->
+</main>
 
 <!-- ======= Footer ======= -->
 <footer id="footer" class="footer">
